@@ -1,5 +1,10 @@
 # proxmox_api
 
+[![Tests](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/tests.yml/badge.svg)](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/tests.yml)
+[![Docs](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/docs.yml/badge.svg)](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/docs.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/github/license/Ap3x/ProxmoxAPI)](https://github.com/Ap3x/ProxmoxAPI/blob/main/LICENSE)
+
 A Python wrapper around the Proxmox VE REST API, auto-generated from the official `apidoc.json` documentation.
 
 ## Features
