@@ -1,4 +1,4 @@
-# proxmox_api
+# Proxmox API
 
 [![Tests](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/tests.yml/badge.svg)](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/tests.yml)
 [![Docs](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/docs.yml/badge.svg)](https://github.com/Ap3x/ProxmoxAPI/actions/workflows/docs.yml)
