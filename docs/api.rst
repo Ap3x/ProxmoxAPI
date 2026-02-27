@@ -19,6 +19,7 @@ _base -- Resource base class
 .. automodule:: proxmox_api._base
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 access -- Access / authentication
@@ -27,6 +28,7 @@ access -- Access / authentication
 .. automodule:: proxmox_api.access
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 cluster -- Cluster resources
@@ -35,6 +37,7 @@ cluster -- Cluster resources
 .. automodule:: proxmox_api.cluster
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 nodes -- Node resources
@@ -43,6 +46,7 @@ nodes -- Node resources
 .. automodule:: proxmox_api.nodes
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 qemu -- QEMU VM resources
@@ -51,6 +55,7 @@ qemu -- QEMU VM resources
 .. automodule:: proxmox_api.qemu
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 lxc -- LXC container resources
@@ -59,6 +64,7 @@ lxc -- LXC container resources
 .. automodule:: proxmox_api.lxc
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 node_resources -- Disks & node firewall
@@ -67,6 +73,7 @@ node_resources -- Disks & node firewall
 .. automodule:: proxmox_api.node_resources
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 storage -- Storage resources
@@ -75,6 +82,7 @@ storage -- Storage resources
 .. automodule:: proxmox_api.storage
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 pools -- Pool resources
@@ -83,6 +91,7 @@ pools -- Pool resources
 .. automodule:: proxmox_api.pools
    :members:
    :undoc-members:
+   :private-members:
    :show-inheritance:
 
 parse_apidoc -- API doc parser
