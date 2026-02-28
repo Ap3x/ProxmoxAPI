@@ -14,6 +14,22 @@ A Python wrapper around the Proxmox VE REST API, auto-generated from the officia
 - **Two auth methods** — API token or username/password
 - **apidoc parser** — CLI tool to inspect and analyze the Proxmox API schema
 
+## Why ProxmoxAPI over [proxmoxer](https://github.com/proxmoxer/proxmoxer)?
+
+| | **ProxmoxAPI** | **proxmoxer** |
+|---|---|---|
+| **API style** | Explicit classes with named methods (`vm.start()`, `vm.clone(newid=101)`) | Dynamic attribute proxy — every call goes through generic `.get()` / `.post()` |
+| **IDE support** | Full autocomplete, go-to-definition, and inline docs because every endpoint is a real method on a real class | No completions or type info — endpoints are built at runtime via `__getattr__` |
+| **Type hints** | Complete Python 3.10+ type annotations on all 643 endpoints | None |
+| **Discoverability** | Browse the class hierarchy or use the built-in `parse-apidoc` CLI to inspect endpoints, parameters, and types | Read the Proxmox wiki or guess the path |
+| **Endpoint coverage** | 643 endpoints explicitly implemented across 38 resource classes | Covers any path (dynamic), but offers no per-endpoint documentation or validation |
+| **Dependencies** | `requests` only | `requests` + optional `paramiko` / `openssh_wrapper` |
+| **Python version** | 3.10+ | 2.7+ / 3.x |
+
+### In short
+
+proxmoxer maps REST paths dynamically — which is flexible, but gives your editor and type checker nothing to work with. ProxmoxAPI takes the opposite approach: every endpoint is a typed, documented method, so you get autocomplete, parameter hints, and catch mistakes before they hit the server.
+
 ## Installation
 
 ```bash
